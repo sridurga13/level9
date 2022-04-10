@@ -1,0 +1,65 @@
+<h1 align="center">Martial-Arts</h1>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+</head>
+<style>
+  body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+  }
+  .scoreboard{
+      display:grid;
+      grid-template-columns: repeat(2,1fr);
+      width: 300px;
+      font-family: 'Quiksand',sans-seirf;
+
+  }
+  .scoreboard__score{
+      padding:10px;
+      text-align:center;
+      font-size: 2em;
+  }
+  .scoreboard__name{
+      font-weight:bold;
+      border-bottom: 1px solid darkred;
+      color: blue;
+      font-size: 30px;
+  }
+  
+  .scoreboard__controls{
+       display:flex;
+  }
+  .scoreboard__controls-button{
+      flex-grow:1;
+      border:none;
+      background:darkgrey;
+      cursor: pointer;
+      font-size: 1.2em;
+  }
+  .scoreboard__controls-button:hover{
+      background:dimgray
+  }
+  .scoreboard__controls-button:active{
+      background: dimgray;
+  }
+</style>
+<canvas id="my-canvas" width="1000" height="500"></canvas>
+<div align="center">
+  <button   id="backward">Backward(Left-Arrow key) </button>
+  <button   id="kick"> Kick(Down-Arrow key) </button>
+  <button   id="punch"> Punch(Up-Arrow key)</button>
+  <button   id="forward"> Forward(Right-Arrow key)</button>
+  <button id="block">block(Backspace key) </button>
+</div>
+
+
+
+<script src="main.js"></script>
